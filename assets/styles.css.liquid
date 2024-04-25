@@ -9949,11 +9949,12 @@ html.touch .product-block.product-block--quickbuy .cc-quick-buy-btn, html.touch 
   padding-bottom: {{ product_form_gap_small }}px;
 }
 .product-area .product-detail__form__options--no-options {
-  padding: 0;
+  padding: 5px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 .product-area .product-detail__form__options--no-options .selector-wrapper {
-  padding-top: {{ product_form_gap_small }}px;
-  padding-bottom: {{ product_form_gap_small }}px;
+  font-size: 13px;
 }
 .product-area .product-area__text-block.feature-subheader, .product-area #comments .comment .product-area__text-block.comment-date, #comments .comment .product-area .product-area__text-block.comment-date {
   margin-bottom: 0;
@@ -10374,7 +10375,6 @@ html.touch .product-block.product-block--quickbuy .cc-quick-buy-btn, html.touch 
 .product-area .product-area__details .product-title {
   margin: {{ edge_gutter | divided_by: 2 }}px 0 0;
   text-align: left;
-  padding-left: 5px;
 }
 .product-area .product-area__details .unit-price {
   font-style: normal;
@@ -15068,9 +15068,9 @@ body {
 }
 .campaign-duration {
   display: block;
-  padding-left: 5px;
   font-size: 13px;
   line-height: 18px;
+  font-style: italic;
 }
 .custom-price .price.theme-money {
   color: #fff;
@@ -15392,7 +15392,14 @@ body {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
-
+.product-area .product-area__details .product-detail__form__options .selector-wrapper label {
+  font-weight: 400;
+  font-size: 13px;
+  margin: 0;
+}
+.rio-media-gallery  {
+  margin-top: 40px;
+}
 @media(min-width:1441px) {
   .product-detail__form .no-compared {
     max-width: 360px;
@@ -16174,7 +16181,6 @@ button#search_postcode {
   .campaign-duration {
     font-size: 10px;
     line-height: 16px;
-    padding-left: 6px;
   }
   .template-collection .collection-header {
     margin-top: 150px;
